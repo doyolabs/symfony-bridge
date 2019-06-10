@@ -1,0 +1,33 @@
+{
+    "name": "doyo/symfony-bridge",
+    "description": "Provide Compatibility mode between symfony 3.4 and 4.3",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Anthonius Munthi",
+            "email": "me@itstoni.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "preferred-install": "dist"
+    },
+    "autoload": {
+        "psr-4": {
+            "Doyo\\Symfony\\Bridge\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Test\\Doyo\\Symfony\\Bridge\\": "tests/"
+        }
+    },
+    "require": {},
+    "require-dev": {
+        "symfony/translation": "^3.4 | ^4.3",
+        "symfony/event-dispatcher": "^3.4 | ^4.3",
+        "phpunit/phpunit": "^6.5"
+    }
+}
